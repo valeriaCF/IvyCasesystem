@@ -22,7 +22,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header-gradient {
-            background-image: linear-gradient(to right, #2c5282, #3b82f6); /* Tonos de azul más oscuros */
+            background-image: linear-gradient(to right, #005FC5, #4CBF8C); /* Tonos de la paleta de ComunidadFeliz */
             color: white;
             padding: 3rem 1.5rem;
             border-radius: 12px;
@@ -42,7 +42,7 @@
             justify-content: space-between;
             font-size: 1.25rem;
             font-weight: 600;
-            color: #2c5282; /* Azul más oscuro para los títulos desplegables */
+            color: #4CBF8C; /* Verde principal para los títulos */
         }
         summary::before {
             content: '';
@@ -73,7 +73,7 @@
         }
         li::before {
             content: '•';
-            color: #3b82f6; /* Azul que combina con el gradiente */
+            color: #DC4B5C; /* Rojo complementario para los puntos */
             font-weight: bold;
             display: inline-block;
             width: 1em;
@@ -94,296 +94,522 @@
 <body class="flex flex-col items-center p-6 sm:p-10">
 
     <div class="container mx-auto">
-        <!-- Encabezado de la página con gradiente -->
-        <header class="text-center mb-10 header-gradient">
-            <h1 class="text-4xl sm:text-5xl font-bold mb-2">Ivy Case System</h1>
-            <p class="text-lg text-gray-200">La guía definitiva para dominar la resolución de casos de negocio</p>
-        </header>
+        <!-- Contenido de la página de la guía (visible por defecto) -->
+        <div id="guia-seccion">
+            <!-- Encabezado de la página con gradiente -->
+            <header class="text-center mb-10 header-gradient">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-2">Ivy Case System</h1>
+                <p class="text-lg text-gray-200">La guía definitiva para dominar la resolución de casos de negocio</p>
+            </header>
 
-        <!-- Sección de introducción -->
-        <section class="mb-10 card p-6 sm:p-8">
-            <h2 class="text-2xl font-semibold">¿Qué es el Ivy Case System?</h2>
-            <p class="text-gray-600 leading-relaxed">
-                El **Ivy Case System** es un marco de trabajo de 12 etapas para resolver casos de negocios. Su principal propósito es ayudar a los consultores y a quienes se preparan para entrevistas a abordar problemas complejos de forma estructurada y lógica. Funciona como una hoja de ruta que te guía desde el momento en que escuchas el problema hasta que ofreces una recomendación final.
-            </p>
-        </section>
-        
-        <!-- Sección de los 12 escenarios -->
-        <section class="mb-10 card p-6 sm:p-8">
-            <h2 class="text-2xl font-semibold">Los 12 Escenarios de Casos de Negocio</h2>
+            <!-- Sección de introducción -->
+            <section class="mb-10 card p-6 sm:p-8">
+                <h2 class="text-2xl font-semibold">¿Qué es el Ivy Case System?</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    El **Ivy Case System** es un marco de trabajo de 12 etapas para resolver casos de negocios. Su principal propósito es ayudar a los consultores y a quienes se preparan para entrevistas a abordar problemas complejos de forma estructurada y lógica. Funciona como una hoja de ruta que te guía desde el momento en que escuchas el problema hasta que ofreces una recomendación final.
+                </p>
+            </section>
+            
+            <!-- Sección de los 12 escenarios -->
+            <section class="mb-10 card p-6 sm:p-8">
+                <h2 class="text-2xl font-semibold">Los 12 Escenarios de Casos de Negocio</h2>
 
-            <!-- Escenario 1 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">1. Entrar en un nuevo mercado</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Evaluar la viabilidad de que una empresa ingrese a un nuevo mercado, sea geográfico o un nuevo segmento de clientes.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>El Mercado:</strong> ¿Cuál es su tamaño y tasa de crecimiento? ¿Dónde está en su ciclo de vida? ¿Quiénes son los clientes y cómo están segmentados?</li>
-                        <li><strong>La Empresa:</strong> ¿Cuál es el objetivo al entrar en este mercado? ¿Tiene las capacidades para hacerlo?</li>
-                        <li><strong>La Competencia:</strong> ¿Quiénes son los principales competidores y cuál es su cuota de mercado? ¿Cuáles son las barreras de entrada?</li>
-                        <li><strong>Entrar al Mercado:</strong> ¿Cuál es la mejor forma de entrar (adquirir, empezar de cero, o alianza)? ¿Cuáles son los riesgos?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> La empresa considera expandirse a Colombia. Debería analizar el tamaño del mercado, el número de competidores como Habbi y las leyes locales. Se preguntaría si es mejor abrir una filial, comprar una empresa local o hacer una alianza estratégica.
-                    </p>
+                <!-- Escenario 1 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">1. Entrar en un nuevo mercado 📈</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Evaluar la viabilidad de que una empresa ingrese a un nuevo mercado, sea geográfico o un nuevo segmento de clientes.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>El Mercado:</strong> ¿Cuál es su tamaño y tasa de crecimiento? ¿Dónde está en su ciclo de vida? ¿Qué tan saturado está? ¿Cuáles son las tendencias del mercado? ¿Quiénes son los clientes y cómo están segmentados?</li>
+                            <li><strong>La Empresa:</strong> ¿Cuál es el objetivo al entrar en este mercado? ¿Tiene la empresa las capacidades (financieras, de marketing, de personal) para hacerlo? ¿Cuál es el producto o servicio y cómo se diferencia? ¿Es un líder en su industria?</li>
+                            <li><strong>La Competencia:</strong> ¿Quiénes son los principales competidores? ¿Cuál es su cuota de mercado? ¿Cuáles son sus ventajas competitivas? ¿Cuáles son las barreras de entrada?</li>
+                            <li><strong>Entrar al Mercado:</strong> ¿Cuál es la mejor forma de entrar (adquirir, empezar de cero, o una alianza estratégica)? ¿Cuáles son los riesgos y los beneficios de cada opción?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> La empresa considera expandirse a Colombia. Debería analizar el tamaño del mercado, el número de competidores como Habbi y las leyes locales. Se preguntaría si es mejor abrir una filial, comprar una empresa local o hacer una alianza estratégica con una empresa de software existente.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 2 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">2. Análisis de la industria 🏭</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Analizar la estructura y dinámica de una industria. Se utiliza el marco de las 5 Fuerzas de Porter.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Fuerzas de la industria:</strong> ¿Qué tan rentable es? ¿Cómo es la estructura de precios?</li>
+                            <li><strong>Amenaza de nuevos entrantes:</strong> ¿Qué tan difícil es entrar en esta industria? ¿Existen patentes, marcas o un costo de entrada elevado?</li>
+                            <li><strong>Poder de los compradores:</strong> ¿Cuán sensibles son al precio? ¿Hay pocos compradores grandes o muchos pequeños?</li>
+                            <li><strong>Poder de los proveedores:</strong> ¿Hay muchos o pocos proveedores? ¿Hay costos de cambio para los compradores?</li>
+                            <li><strong>Rivalidad entre competidores:</strong> ¿Qué tan feroz es la competencia? ¿Quiénes son los competidores principales y cuál es su cuota de mercado?</li>
+                            <li><strong>Amenaza de sustitutos:</strong> ¿Hay productos o servicios que puedan reemplazar el de la industria?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Analizar el mercado de gestión de condominios en Chile. La empresa debe evaluar el poder de los administradores de edificios (compradores) para negociar precios, la amenaza de soluciones caseras (sustitutos) y la intensidad de la competencia con otras plataformas como Edifito.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 3 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <h3 class="text-xl font-bold">3. Fusiones y adquisiciones 🤝</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Evaluar si adquirir otra empresa tiene sentido estratégico y financiero.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Compañía compradora:</strong> ¿Cuál es el motivo de la adquisición? ¿Cómo se financiará la compra (efectivo, acciones)? ¿Cuáles son las capacidades de la compañía compradora?</li>
+                            <li><strong>Compañía objetivo:</strong> ¿Cuál es el estado de la compañía objetivo? ¿Qué la hace atractiva? ¿Cuál es su situación financiera y sus deudas? ¿Es su cultura compatible con la del comprador?</li>
+                            <li><strong>El Mercado y la Competencia:</strong> ¿Cómo cambiará la estructura del mercado? ¿Cómo reaccionarán los competidores?</li>
+                            <li><strong>Sinergias y riesgos:</strong> ¿Cuáles son las sinergias posibles (reducción de costos, aumento de ingresos)? ¿Cuáles son los riesgos de la integración (fallos en la cultura, tecnológica, etc.)?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> La empresa considera adquirir una startup de seguridad. La clave es evaluar la valoración de la startup, la compatibilidad de sus tecnologías y si la adquisición generará más ingresos que el costo de la compra a largo plazo.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 4 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">4. Desarrollo de un nuevo producto 🚀</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Decidir si lanzar un nuevo producto o servicio.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>El Producto:</strong> ¿Qué es y cómo se diferencia de lo que ya existe? ¿Hay patentes o protecciones?</li>
+                            <li><strong>El Cliente:</strong> ¿Quién es el cliente objetivo? ¿Qué valor le aporta el producto? ¿Cómo se comercializará y distribuirá el producto?</li>
+                            <li><strong>La Competencia:</strong> ¿Hay productos similares? ¿Cómo reaccionarán los competidores?</li>
+                            <li><strong>Las Finanzas:</strong> ¿Cuánto costará desarrollar y lanzar el producto? ¿Cuál es el precio de venta esperado y la rentabilidad? ¿Cómo se financiará el proyecto?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Lanzar un módulo de reservas de espacios comunes. La empresa debe investigar si hay una demanda real, los costos de desarrollo y la rentabilidad que podría generar para justificar la inversión.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 5 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <h3 class="text-xl font-bold">5. Estrategias de precios 💰</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Determinar el precio óptimo para un producto o servicio.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Oferta y Demanda:</strong> ¿Qué tan grande es el mercado? ¿Qué tan sensible es la demanda a los cambios de precio? ¿Cuáles son los costos fijos y variables del producto?</li>
+                            <li><strong>Competencia:</strong> ¿Cómo se comparan nuestros precios con los de los competidores? ¿Qué precios tienen los productos sustitutos?</li>
+                            <li><strong>Estrategia de precios:</strong> ¿El objetivo es maximizar la rentabilidad o ganar cuota de mercado? ¿Cuál será el método de fijación de precios (basado en costos, en el valor, o en la competencia)?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Determinar el precio para un nuevo plan premium. La empresa debe analizar los precios de la competencia y el valor percibido por el cliente para fijar un precio rentable.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 6 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">6. Estrategias de crecimiento 🌱</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Cómo la empresa puede aumentar sus ingresos o su cuota de mercado.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Vía de crecimiento:</strong> ¿Aumentar la cuota de mercado en el sector actual? ¿Crear un nuevo producto? ¿Expandirse a un nuevo mercado? ¿Adquirir una empresa?</li>
+                            <li><strong>El Mercado y la Empresa:</strong> ¿Qué tan grande y rentable es el mercado actual? ¿Qué ventajas competitivas tenemos?</li>
+                            <li><strong>Finanzas:</strong> ¿Qué inversiones se necesitan para el crecimiento? ¿Cuál es la rentabilidad proyectada del crecimiento?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> La meta es duplicar la base de clientes. Las opciones podrían ser una estrategia de marketing más agresiva para atraer nuevos clientes o la adquisición de una empresa de menor tamaño para ganar cuota de mercado rápidamente.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 7 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">7. Iniciar un nuevo negocio (Start-up) 💡</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Evaluar la viabilidad y el potencial de una nueva empresa desde cero.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>El Mercado:</strong> ¿Cuál es su tamaño y quiénes son los clientes? ¿Es un mercado en crecimiento?</li>
+                            <li><strong>Las Finanzas:</strong> ¿Cuál es la inversión inicial y el punto de equilibrio? ¿Cuáles son los costos y los ingresos proyectados?</li>
+                            <li><strong>El Negocio:</strong> ¿Cuál es la ventaja competitiva? ¿Cuáles son las barreras de entrada? ¿El equipo de gestión tiene experiencia?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Analizar la viabilidad de lanzar un servicio de auditoría financiera para comunidades. Se debe estimar el capital inicial, el mercado potencial y cómo se diferenciará de los auditores tradicionales.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 8 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">8. Respuesta competitiva 🥊</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Cómo una empresa debe reaccionar ante una acción de un competidor.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Acción del competidor:</strong> ¿Qué hizo el competidor? ¿Por qué lo hizo? ¿Cómo le afectará a él y a la industria?</li>
+                            <li><strong>Nuestra reacción:</strong> ¿Cómo afectará la acción a nuestra empresa (ingresos, cuota de mercado)? ¿Qué opciones tenemos (bajar precios, mejorar la calidad, lanzar una campaña)? ¿Cuál es la mejor respuesta y por qué?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Un competidor, Edifito, lanza una campaña de precios agresiva. ComunidadFeliz.cl debe evaluar el impacto y decidir si responder con un descuento, mejorar sus servicios o lanzar una campaña de marketing.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 9 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">9. Aumento de las ventas 📉</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Identificar las causas de una caída en las ventas y proponer soluciones.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Fuerzas internas:</strong> ¿Han cambiado las ventas por producto, región o canal de distribución? ¿Ha habido cambios en la fuerza de ventas?</li>
+                            <li><strong>Fuerzas del mercado:</strong> ¿El mercado está madurando? ¿Se ha desarrollado un producto sustituto? ¿Han cambiado las preferencias de los clientes?</li>
+                            <li><strong>Fuerzas de la competencia:</strong> ¿Ha entrado un nuevo competidor? ¿Ha cambiado la estrategia de precios o el producto de la competencia?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Las ventas de licencias para comunidades pequeñas han disminuido. Se debe analizar si es porque un competidor lanzó una versión gratuita o si las comunidades pequeñas están migrando a soluciones de software más simples.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 10 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <h3 class="text-xl font-bold">10. Reducción de costos ✂️</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Encontrar maneras de disminuir los gastos de una empresa.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Análisis de los costos:</strong> ¿Cuáles son los costos fijos y variables? ¿Cuáles son los costos principales?</li>
+                            <li><strong>Opciones de reducción:</strong> ¿Se puede reducir el personal, o los costos de producción? ¿Se puede automatizar un proceso?</li>
+                            <li><strong>Impacto:</strong> ¿Qué impacto tendrá la reducción de costos en la calidad del producto, la moral de los empleados o la percepción del cliente?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Se busca reducir los costos operativos. La empresa debe evaluar si es más beneficioso recortar los gastos de marketing, automatizar el proceso de facturación o renegociar contratos con proveedores.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 11 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-xl font-bold">11. Situación de recesión 📉</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Cómo una empresa debe actuar en un entorno económico difícil.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>Impacto de la recesión:</strong> ¿Cómo está afectando la recesión a la industria y a la empresa? ¿Cómo ha cambiado el poder adquisitivo de los clientes?</li>
+                            <li><strong>Estrategias:</strong> ¿Qué se puede hacer (reducir costos, ofrecer planes de pago flexibles, enfocarse en la retención de clientes)? ¿Qué hace la competencia?</li>
+                            <li><strong>Finanzas:</strong> ¿Cuál es la situación del flujo de efectivo de la empresa?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> En una recesión, las comunidades buscan reducir gastos. La empresa debe considerar si ofrecer planes de pago flexibles o destacar cómo su software ayuda a optimizar los gastos para retener a los clientes.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Escenario 12 -->
+                <details class="mb-4">
+                    <summary>
+                        <span class="flex items-center">
+                            <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <h3 class="text-xl font-bold">12. Dilema de operaciones ⚙️</h3>
+                        </span>
+                    </summary>
+                    <div>
+                        <p class="text-gray-600 mb-2"><strong>Definición:</strong> Optimizar los procesos internos de la empresa.</p>
+                        <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
+                        <ul class="text-sm text-gray-600 mt-2">
+                            <li><strong>El proceso:</strong> ¿Qué es el proceso y dónde está el cuello de botella?</li>
+                            <li><strong>La tecnología y el personal:</strong> ¿La tecnología es obsoleta? ¿Hay problemas con el personal o la gestión?</li>
+                            <li><strong>Impacto:</strong> ¿Qué impacto tienen los problemas en los costos, la calidad y la satisfacción del cliente?</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 italic mt-4">
+                            <strong>Ejemplo con ComunidadFeliz.cl:</strong> Aumentan los tiempos de respuesta en el soporte técnico. La empresa debe investigar si el problema es la falta de personal, la falta de una base de datos de preguntas frecuentes o una herramienta de gestión de tickets ineficiente.
+                        </p>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Botón de acción -->
+            <section class="flex justify-center my-10">
+                <button onclick="mostrarEjercicio()" class="bg-[#DC4B5C] hover:bg-[#b03d4c] text-white font-bold py-4 px-8 rounded-full shadow-lg transition-colors duration-200">
+                    ¡Hagamos un ejercicio!
+                </button>
+            </section>
+        </div>
+
+        <!-- Contenido de la página de ejercicio (oculta por defecto) -->
+        <div id="ejercicio-seccion" class="hidden">
+            <!-- Botón de regreso -->
+            <button onclick="mostrarGuia()" class="inline-flex items-center text-sm font-semibold text-gray-500 hover:text-gray-700 transition-colors mb-4">
+                <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver a la Guía
+            </button>
+
+            <!-- Encabezado de la página con gradiente -->
+            <header class="text-center mb-10 header-gradient">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-2">Ejercicio de Estrategia de Crecimiento</h1>
+                <p class="text-lg text-gray-200">Análisis del caso: Ópera de Nueva York</p>
+            </header>
+
+            <!-- Contenido del ejercicio con diálogo -->
+            <section class="mb-10 card p-6 sm:p-8">
+                <h2 class="text-2xl font-semibold">El Caso</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    **Ópera de Nueva York**<br>
+                    **Caso 7:** Nuestro cliente es la Ópera de Nueva York. Quiere desarrollar una estrategia de crecimiento para los próximos cinco años. ¿Qué le aconsejarías analizar y cuáles son tus recomendaciones para el crecimiento?
+                </p>
+
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">La Ópera de Nueva York quiere que desarrollemos una estrategia de crecimiento para los próximos cinco años.</p>
                 </div>
-            </details>
-
-            <!-- Escenario 2 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">2. Análisis de la industria</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Analizar la estructura y dinámica de una industria. Se utiliza el marco de las 5 Fuerzas de Porter.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Amenaza de nuevos entrantes:</strong> ¿Qué tan difícil es entrar en esta industria?</li>
-                        <li><strong>Poder de los compradores y proveedores:</strong> ¿Quién tiene más poder de negociación?</li>
-                        <li><strong>Rivalidad entre competidores:</strong> ¿Qué tan feroz es la competencia?</li>
-                        <li><strong>Amenaza de sustitutos:</strong> ¿Hay productos o servicios que puedan reemplazar el de la industria?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Analizar el mercado de gestión de condominios en Chile. La empresa debe evaluar el poder de los administradores de edificios (compradores) para negociar precios, la amenaza de soluciones caseras (sustitutos) y la intensidad de la competencia con otras plataformas como Edifito.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Es correcto.</p>
                 </div>
-            </details>
-
-            <!-- Escenario 3 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">3. Fusiones y adquisiciones</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Evaluar si adquirir otra empresa tiene sentido estratégico y financiero.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Compañía compradora:</strong> ¿Cuál es el motivo de la adquisición y cómo se financia?</li>
-                        <li><strong>Compañía objetivo:</strong> ¿Cuál es su valor, situación financiera y si su cultura es compatible?</li>
-                        <li><strong>Sinergias y riesgos:</strong> ¿Cuáles son los beneficios y los riesgos de la integración?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> La empresa considera adquirir una startup de seguridad. La clave es evaluar la valoración de la startup, la compatibilidad de sus tecnologías y si la adquisición generará más ingresos que el costo de la compra a largo plazo.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Además de desarrollar esta estrategia de cinco años, ¿hay algún otro objetivo?</p>
                 </div>
-            </details>
-
-            <!-- Escenario 4 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">4. Desarrollo de un nuevo producto</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Decidir si lanzar un nuevo producto o servicio.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>El Producto:</strong> ¿Qué es y cómo se diferencia?</li>
-                        <li><strong>El Cliente:</strong> ¿Quién es el cliente objetivo y qué valor le aporta?</li>
-                        <li><strong>La Competencia:</strong> ¿Hay productos similares? ¿Cómo reaccionarán los competidores?</li>
-                        <li><strong>Las Finanzas:</strong> ¿Cuánto costará y cuál es la rentabilidad?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Lanzar un módulo de reservas de espacios comunes. La empresa debe investigar si hay una demanda real, los costos de desarrollo y la rentabilidad que podría generar para justificar la inversión.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- No.</p>
                 </div>
-            </details>
-
-            <!-- Escenario 5 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">5. Estrategias de precios</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Determinar el precio óptimo para un producto o servicio.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Oferta y Demanda:</strong> ¿Qué tan sensible es la demanda a los cambios de precio?</li>
-                        <li><strong>Competencia:</strong> ¿Cómo se comparan nuestros precios con los de los competidores?</li>
-                        <li><strong>Estrategia de precios:</strong> ¿El objetivo es maximizar la rentabilidad o ganar cuota de mercado?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Determinar el precio para un nuevo plan premium. La empresa debe analizar los precios de la competencia y el valor percibido por el cliente para fijar un precio rentable.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">¿Entonces no necesito analizar el aumento de ventas, la reducción de costos o el aumento de ganancias?</p>
                 </div>
-            </details>
-
-            <!-- Escenario 6 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">6. Estrategias de crecimiento</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Cómo la empresa puede aumentar sus ingresos o su cuota de mercado.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Vía de crecimiento:</strong> ¿Aumentar la cuota de mercado, crear un nuevo producto, expandirse o adquirir una empresa?</li>
-                        <li><strong>Finanzas:</strong> ¿Qué inversiones se necesitan y cuál es la rentabilidad proyectada?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> La meta es duplicar la base de clientes. Las opciones podrían ser una estrategia de marketing más agresiva para atraer nuevos clientes o la adquisición de una empresa de menor tamaño para ganar cuota de mercado rápidamente.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Esos son todos ingredientes clave para el crecimiento, ¿no crees?</p>
                 </div>
-            </details>
-
-            <!-- Escenario 7 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">7. Iniciar un nuevo negocio (Start-up)</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Evaluar la viabilidad y el potencial de una nueva empresa desde cero.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>El Mercado:</strong> ¿Cuál es su tamaño y quiénes son los clientes?</li>
-                        <li><strong>Las Finanzas:</strong> ¿Cuál es la inversión inicial y el punto de equilibrio?</li>
-                        <li><strong>El Negocio:</strong> ¿Cuál es la ventaja competitiva y las barreras de entrada?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Analizar la viabilidad de lanzar un servicio de auditoría financiera para comunidades. Se debe estimar el capital inicial, el mercado potencial y cómo se diferenciará de los auditores tradicionales.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Sí, supongo que sí. Solo estaba tratando de determinar la dirección de la pregunta. Me gustaría hacer algunas preguntas. ¿La industria está creciendo?</p>
                 </div>
-            </details>
-
-            <!-- Escenario 8 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">8. Respuesta competitiva</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Cómo una empresa debe reaccionar ante una acción de un competidor.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Acción del competidor:</strong> ¿Qué hizo y por qué?</li>
-                        <li><strong>Nuestra reacción:</strong> ¿Cómo nos afecta y qué opciones tenemos?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Un competidor, Edifito, lanza una campaña de precios agresiva. ComunidadFeliz.cl debe evaluar el impacto y decidir si responder con un descuento, mejorar sus servicios o lanzar una campaña de marketing.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- No, bajó un 7 por ciento el año pasado.</p>
                 </div>
-            </details>
-
-            <!-- Escenario 9 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">9. Aumento de las ventas</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Identificar las causas de una caída en las ventas y proponer soluciones.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Fuerzas internas:</strong> ¿Han cambiado las ventas por producto, región o canal de distribución?</li>
-                        <li><strong>Fuerzas del mercado y la competencia:</strong> ¿El mercado está madurando? ¿Se ha desarrollado un producto sustituto? ¿Un competidor nos ha quitado clientes?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Las ventas de licencias para comunidades pequeñas han disminuido. Se debe analizar si es porque un competidor lanzó una versión gratuita o si las comunidades pequeñas están migrando a soluciones de software más simples.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">¿Cómo nos estamos comportando en comparación con la industria?</p>
                 </div>
-            </details>
-
-            <!-- Escenario 10 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">10. Reducción de costos</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Encontrar maneras de disminuir los gastos de una empresa.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Análisis de los costos:</strong> ¿Cuáles son los costos fijos y variables?</li>
-                        <li><strong>Opciones de reducción:</strong> ¿Se puede reducir el personal, o los costos de producción?</li>
-                        <li><strong>Impacto:</strong> ¿Qué impacto tendrá la reducción de costos en la calidad del producto o la percepción del cliente?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Se busca reducir los costos operativos. La empresa debe evaluar si es más beneficioso recortar los gastos de marketing, automatizar el proceso de facturación o renegociar contratos con proveedores.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Mejor, pero no por mucho. Nuestra tasa de crecimiento el año pasado fue del 2 por ciento.</p>
                 </div>
-            </details>
-
-            <!-- Escenario 11 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">11. Situación de recesión</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Cómo una empresa debe actuar en un entorno económico difícil.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>Impacto de la recesión:</strong> ¿Cómo está afectando la recesión a la industria y a la empresa?</li>
-                        <li><strong>Estrategias:</strong> ¿Qué se puede hacer para retener a los clientes?</li>
-                        <li><strong>Finanzas:</strong> ¿Cuál es la situación del flujo de efectivo de la empresa?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> En una recesión, las comunidades buscan reducir gastos. La empresa debe considerar si ofrecer planes de pago flexibles o destacar cómo su software ayuda a optimizar los gastos para retener a los clientes.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">¿Quiénes son nuestros competidores y qué cuota de mercado tiene cada uno?</p>
                 </div>
-            </details>
-
-            <!-- Escenario 12 -->
-            <details class="mb-4">
-                <summary>
-                    <span class="flex items-center">
-                        <svg class="h-6 w-6 text-gray-500 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10l-3.293-3.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <h3 class="text-xl font-semibold">12. Dilema de operaciones</h3>
-                    </span>
-                </summary>
-                <div>
-                    <p class="text-gray-600 mb-2"><strong>Definición:</strong> Optimizar los procesos internos de la empresa.</p>
-                    <p class="font-bold text-gray-700">Preguntas Clave (según "Case in Point"):</p>
-                    <ul class="text-sm text-gray-600 mt-2">
-                        <li><strong>El proceso:</strong> ¿Qué es el proceso y dónde está el cuello de botella?</li>
-                        <li><strong>La tecnología y el personal:</strong> ¿La tecnología es obsoleta? ¿Hay problemas con el personal?</li>
-                        <li><strong>Impacto:</strong> ¿Qué impacto tienen los problemas en los costos y la satisfacción del cliente?</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 italic mt-4">
-                        <strong>Ejemplo con ComunidadFeliz.cl:</strong> Aumentan los tiempos de respuesta en el soporte técnico. La empresa debe investigar si el problema es la falta de personal, la falta de una base de datos de preguntas frecuentes o una herramienta de gestión de tickets ineficiente.
-                    </p>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- ¿Quién crees que es nuestra competencia?</p>
                 </div>
-            </details>
-        </section>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Es cualquiera o cualquier cosa que compita por el "dólar de ocio". Podría ser algo tan amplio como un restaurante, un partido de hockey, eventos en el Lincoln Center o un viaje a los Hamptons. Pero también son otras compañías de ópera en Nueva York. No estoy seguro de cuántas compañías de ópera hay en Nueva York.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Hay alrededor de cuatro. La más grande es la Ópera Metropolitana. ¿Puedes nombrar alguna ópera?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Claro. Está "Tommy" y "Fígaro". Ah, y "El Barbero de Sevilla".</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- De acuerdo. Eso me ayuda a poner tu respuesta en perspectiva. ¿Qué harías?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Lo primero que haría es un análisis de la competencia. No solo analizaría las otras cuatro compañías de ópera de Nueva York, sino también las de otras ciudades importantes de EE. UU., y quizás también las de Londres y París.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- ¿Qué analizarías?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Todo. Ingresos y fuentes de ingresos, puntos de venta de entradas, costos fijos, costos marginales, costos de producción, calendario de la temporada, precios de las entradas, nombres y tipos de óperas producidas, nombres de artistas de renombre en cada producción, campañas de marketing y otros usos para el lugar.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Esa es una lista bastante larga. Después de hacer el análisis, ¿qué harías?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Tomaría las mejores prácticas y vería si tiene sentido incorporar alguna de ellas en la Ópera de Nueva York.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Mencionaste las fuentes de ingresos. ¿Cuáles crees que son las fuentes de ingresos?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Venta de entradas, venta de programas, bebidas durante el intermedio y merchandising como CDs, camisetas, ese tipo de cosas. Y creo que la recaudación de fondos también es una fuente de ingresos importante.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- ¿Cómo aumentarías los ingresos?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">De tres maneras. Podemos considerar aumentar los precios de las entradas, podemos aumentar nuestra campaña de marketing para que más gente venga a la ópera y hacer que gasten más una vez que están allí.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- ¿Se te ocurren otras fuentes de ingresos?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">¿Quizás organizar conferencias y paneles o posiblemente dar lecciones?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- No estamos ofreciendo lecciones de canto. ¿Qué más?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Asumiré que una ópera no actúa los 365 días del año y que a menudo hay períodos de tiempo en los que el lugar está abierto o en preproducción. Cada noche que el teatro de la ópera está vacío, estamos perdiendo dinero. Entonces, ¿por qué no celebrar otros eventos en el lugar, específicamente eventos musicales? Quiero decir, la acústica debe ser increíble, ¿no crees?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Me imagino que sí. Bien, eso es bueno. También mencionaste la distribución de entradas.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Sí. Revisaría si se pueden comprar entradas por internet y en otros puntos de venta de entradas. Vería si podemos idear algunos puntos de venta o canales de distribución adicionales y tal vez no tradicionales. Asumo que tienen descuentos para los abonados, grupos grandes, estudiantes y personas mayores.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Eso es correcto.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Creo que las escuelas son un buen lugar para educar a los futuros aficionados a la ópera. Tenemos que reconstruir la audiencia. Interesar a la próxima generación en la ópera.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- La siguiente área que mencionaste fue la de los costos. No quiero dedicarle demasiado tiempo a esto, pero asumiré que trabajarás duro para reducir todos nuestros costos.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Sí.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Para serte sincero, tu respuesta no va por donde yo quiero. Siento que nos estamos empantanando demasiado en los detalles. La pregunta era sobre la estrategia de crecimiento. A menos que tengas algo más que decir sobre las estrategias de crecimiento, terminaremos esta entrevista ahora mismo.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Bueno, hemos hablado de aumentar las ventas atrayendo a un cantante de renombre, agregando nuevos canales de distribución para la venta de entradas y merchandising, así como posibles nuevas fuentes de ingresos. Hablamos de aumentar la línea de productos y la diversidad de esa línea de productos. Eso podría significar nuevo merchandising o más óperas, pero creo que significa diferentes espectáculos, conciertos o quizás espectáculos de comedia, cualquier cosa que llene el teatro de la ópera en las noches en que no hay función. Una tercera estrategia, que no aplica, pero pensé en mencionarla, es la adquisición de la competencia, tal vez comprar una de las compañías de ópera más pequeñas. Pero no parece que tengamos mucho dinero extra a mano, y lo que tenemos puede ser mejor asignado a atraer a más gente a nuestra puerta.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Ese fue un buen resumen, pero no había nada nuevo allí.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Una última cosa. Este verano trabajé para una compañía de fondos mutuos y descubrimos que el 95 por ciento del negocio provenía del 5 por ciento de la base de clientes. Esta compañía no estaba aprovechando plenamente las oportunidades de crecimiento a través de su base de clientes existente. Hasta este verano, nunca diferenciaban entre los clientes que representaban ganancias reales y los clientes que solo representaban costos.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Esto es bueno. Continúa.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Descubrieron que más de un tercio del dinero gastado en marketing y servicio al cliente se desperdiciaba en esfuerzos para adquirir nuevos clientes que nos costaban más de lo que ganábamos. En algunos casos, estábamos haciendo marketing a nuestros clientes establecidos cuando ese dinero podría haberse gastado mejor.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- ¿Entonces qué me estás diciendo?</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 1:</p>
+                    <p class="text-gray-600">Deberíamos enfocar la compañía en atraer clientes nuevos y rentables. Eso puede significar cambiar la forma en que hacemos marketing actual y tradicionalmente. Significa desarrollar mejores relaciones con nuestros clientes rentables. Y finalmente, significa abandonar a aquellos clientes que nos hacen perder dinero.</p>
+                </div>
+                <div class="mb-6">
+                    <p class="font-bold text-gray-700">Persona 2:</p>
+                    <p class="text-gray-600">- Creo que esa teoría se aplica mejor a una compañía de fondos mutuos que a una compañía de ópera, pero te doy puntos por intentarlo.</p>
+                </div>
+            </section>
+        </div>
 
-        <!-- Pie de página -->
+        <!-- Pie de página (visible en ambas secciones) -->
         <footer class="text-center text-gray-500 text-sm mt-10">
-            <p>Creado para educar sobre la resolución de casos de negocio.</p>
-            <p>
-                <a href="#" class="text-blue-500 hover:text-blue-700 transition-colors">Volver arriba</a>
-            </p>
+            <p>Hecho con ♥ por Val y Gemini porque Val no codea para Trini, Clau y Edu</p>
         </footer>
     </div>
+    <script>
+        function mostrarEjercicio() {
+            document.getElementById('guia-seccion').classList.add('hidden');
+            document.getElementById('ejercicio-seccion').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        function mostrarGuia() {
+            document.getElementById('ejercicio-seccion').classList.add('hidden');
+            document.getElementById('guia-seccion').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 </html>
